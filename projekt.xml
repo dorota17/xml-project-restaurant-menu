@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="projekt.xsl"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="projekt.xsd">
+    <przystawki>
+      <przystawka cena="15" waluta = "PLN" kaloryczność = "250" jednostka="kcal">
+      <nazwa>Bruschetta z dodatkami sezonowymi</nazwa>
+      </przystawka>
+       <przystawka cena="10" waluta = "PLN" kaloryczność = "300" jednostka="kcal">
+      <nazwa>Foccacia</nazwa>
+        <wariant>
+        <nazwa>z rozmarynem i czosnkiem</nazwa>
+        </wariant>
+        <wariant>
+        <nazwa>z parmezanem i pomidorkami</nazwa>
+        </wariant>
+      </przystawka>
+      <przystawka cena="32" waluta = "PLN" kaloryczność = "350" jednostka="kcal">
+      <nazwa>Krewetki na maśle czosnkowym</nazwa>
+      </przystawka>
+    </przystawki>
+    <zupy>
+      <zupa cena="25" waluta = "PLN" kaloryczność = "180" jednostka="kcal">
+      <nazwa>Krem pomidorowy</nazwa>
+      <wariant>
+      <nazwa>z grzankami</nazwa>
+      </wariant>
+      <wariant>
+      <nazwa>z paluszkami z ciasta francuskiego</nazwa>
+      </wariant>
+      </zupa>
+      <zupa cena="28" waluta = "PLN" kaloryczność = "150" jednostka="kcal">
+      <nazwa>Sezonowa zupa dyniowa z nasionami słonecznika</nazwa>
+      </zupa>
+    </zupy>
+    <pizze>
+      <pizza>
+      <nazwa>Margherita</nazwa>
+      <rozmiar cena="22" waluta = "PLN"  kaloryczność = "830" jednostka="kcal">
+      <nazwa>30cm</nazwa>
+      </rozmiar>
+      <rozmiar cena="25" waluta = "PLN"  kaloryczność = "960" jednostka="kcal">
+      <nazwa>40cm</nazwa>
+      </rozmiar>
+      </pizza>
+      <pizza>
+      <nazwa>Prosciutto</nazwa>
+      <rozmiar cena="28" waluta = "PLN"  kaloryczność = "880" jednostka="kcal">
+      <nazwa>30cm</nazwa>
+      </rozmiar>
+      <rozmiar cena="31" waluta = "PLN"  kaloryczność = "1150" jednostka="kcal">
+      <nazwa>40cm</nazwa>
+      </rozmiar>
+      </pizza>
+      <pizza>
+      <nazwa>Salami</nazwa>
+      <rozmiar cena="22" waluta = "PLN"  kaloryczność = "920" jednostka="kcal">
+      <nazwa>30cm</nazwa>
+      </rozmiar>
+      <rozmiar cena="25" waluta = "PLN"  kaloryczność = "1200" jednostka="kcal">
+      <nazwa>40cm</nazwa>
+      </rozmiar>
+      </pizza>
+      <pizza>
+      <nazwa>Parma</nazwa>
+      <rozmiar cena="30" waluta = "PLN"  kaloryczność = "900" jednostka="kcal">
+      <nazwa>30cm</nazwa>
+      </rozmiar>
+      <rozmiar cena="35" waluta = "PLN"  kaloryczność = "1000" jednostka="kcal">
+      <nazwa>40cm</nazwa>
+      </rozmiar>
+      </pizza>
+    </pizze>
+    <dodatki>
+    <sosy>
+      <sos cena="1" waluta = "PLN">
+      <nazwa>Pomidorowy</nazwa>
+      </sos>
+      <sos cena="2" waluta = "PLN">
+      <nazwa>Czosnkowy</nazwa>
+      </sos>
+     </sosy>
+     <oliwy>
+      <oliwa cena="1" waluta = "PLN">
+      <nazwa>Czosnkowa</nazwa>
+      </oliwa>
+      <oliwa cena="1" waluta = "PLN">
+      <nazwa>Pikantna</nazwa>
+      </oliwa>
+     </oliwy>
+    </dodatki>
+    <makarony>
+      <makaron cena="22" waluta = "PLN" kaloryczność = "650" jednostka="kcal">
+      <nazwa>Spaghetti Carbonara</nazwa>
+      </makaron>
+      <makaron cena="28" waluta = "PLN" kaloryczność = "550" jednostka="kcal">
+      <nazwa>Spaghetti Bolognese</nazwa>
+      </makaron>
+    </makarony>
+    <napoje>
+      <napoj>
+      <nazwa>Herbata</nazwa>
+      <rozmiar_napoju pojemnosc = "300" jednostka = "ml" cena="10" waluta = "PLN">
+      <nazwa>Mała</nazwa>
+      </rozmiar_napoju>
+      <rozmiar_napoju pojemnosc = "500" jednostka = "ml" cena="15" waluta = "PLN">
+      <nazwa>Duża</nazwa>
+      </rozmiar_napoju>
+      </napoj>
+      <napoj>
+      <nazwa>Kawa</nazwa>
+      <rozmiar_napoju pojemnosc = "300" jednostka = "ml" cena="12" waluta = "PLN">
+      <nazwa>Mała</nazwa>
+      </rozmiar_napoju>
+      <rozmiar_napoju pojemnosc = "500" jednostka = "ml" cena="18" waluta = "PLN">
+      <nazwa>Duża</nazwa>
+      </rozmiar_napoju>
+      </napoj>
+      <napoj>
+      <nazwa>Sok pomarańczowy</nazwa>
+      <rozmiar_napoju pojemnosc = "300" jednostka = "ml" cena="5" waluta = "PLN">
+      <nazwa>Mały</nazwa>
+      </rozmiar_napoju>
+      <rozmiar_napoju pojemnosc = "500" jednostka = "ml" cena="7" waluta = "PLN">
+      <nazwa>Duży</nazwa>
+      </rozmiar_napoju>
+      </napoj>
+    </napoje>
+</menu>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="przystawki"/>
+        <xs:element ref="zupy"/>
+        <xs:element ref="pizze"/>
+        <xs:element ref="dodatki"/>
+        <xs:element ref="makarony"/>
+        <xs:element ref="napoje"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="przystawki">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="przystawka" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="przystawka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+        <xs:element ref="wariant" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="jednostka" type="xs:string" use="required" fixed="kcal"/>
+      <xs:attribute name="kaloryczność" type="xs:integer" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wariant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zupy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="zupa" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="zupa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+        <xs:element ref="wariant" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="jednostka" type="xs:string" use="required" fixed="kcal"/>
+      <xs:attribute name="kaloryczność" type="xs:integer" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pizze">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pizza" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pizza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+        <xs:element ref="rozmiar" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rozmiar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="jednostka" type="xs:string" use="required" fixed="kcal"/>
+      <xs:attribute name="kaloryczność" type="xs:integer" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+      <xs:attribute name="pojemnosc" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dodatki">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sosy"/>
+        <xs:element ref="oliwy"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sosy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="sos" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="oliwy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="oliwa" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="oliwa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="makarony">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="makaron" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="makaron">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="jednostka" type="xs:string" use="required" fixed="kcal"/>
+      <xs:attribute name="kaloryczność" type="xs:integer" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="napoje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="napoj" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="napoj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+        <xs:element ref="rozmiar_napoju" minOccurs = "1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rozmiar_napoju">
+    <xs:complexType >
+      <xs:sequence>
+        <xs:element name="nazwa" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="cena" type="xs:float" use="required"/>
+      <xs:attribute name="jednostka" type="xs:string" use="required" fixed="ml"/>
+      <xs:attribute name="pojemnosc" type="xs:integer" use="required"/>
+      <xs:attribute name="waluta" type="xs:string" fixed="PLN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
